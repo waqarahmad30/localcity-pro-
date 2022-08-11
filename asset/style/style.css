@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+}
+:root
+{
+    --red:rgb(236 68 52);
+}
+.nav-menu
+{
+    display: none;
+}
+
+/**
+Navbar
+**/
+.nav {
+  background-color: white;
+}
+nav .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 5px -7px rgba(0,0,0,0.28);
+-webkit-box-shadow: 0px 10px 5px -7px rgba(0,0,0,0.28);
+-moz-box-shadow: 0px 10px 5px -7px rgba(0,0,0,0.28);
+
+}
+/* navigton end */
+
+/**
+General
+**/
+ul.no-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul.no-style li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  ul.no-style li a {
+    text-decoration: none;
+  }
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+/**
+Text Colors
+**/
+.clr{
+    color: var(--red);
+}
+span{
+    color: var(--red);
+    font-weight: 600;
+}
+.navspan
+{
+    color:black;
+    font-weight: 600;
+}
+.btn
+{
+    
+    display: block;
+    text-align: center ;
+    font-family: sans-serif;
+    padding: 1rem;
+    
+}
+.btn-red{
+    background-color:var(--red); ;
+    color: white;
+}
+.btn-round{
+    border-radius: 10px;
+}
+.logo{
+    width: 100%;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1100px) {
+    .nav-menu
+    {
+        display:flex;
+        justify-content: right;
+        width: 30%;
+    }
+    .cta{
+        display: none;
+    }
+    .navigation
+    {
+        display:none;
+    }
+    .logobox
+    {
+         width:70%;
+    }
+    nav .container
+    {
+justify-content: space-evenly;
+    }
+    .clr{
+        font-size: 50px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+/**
+Media Quries
+**/
